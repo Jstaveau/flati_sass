@@ -1,9 +1,11 @@
-nav
+.standard
     background-color: #363b47
     height: 65px
+    @media screen and (min-width:$screen_xs) and (max-width:$screen_s)
+        display: none
     .flati
         @media screen and (min-width:$screen_xs) and (max-width:$screen_m)        
-                display: none
+            display: none
     div
         height: 100%
         width: 70%
@@ -46,3 +48,41 @@ nav
                     a:hover
                         color: white
                         background-color: #3676bb
+.deroulant
+    position: relative
+    background-color: #363b47
+    height: 65px
+    @media screen and (min-width:$screen_s)
+        display: none
+    @media screen and (min-width:$screen_xs) and (max-width:$screen_s) 
+        display: flex
+        justify-content: center
+        align-items: center
+        .menu_der
+            @media screen and (min-width:$screen_xs) and (max-width:$screen_s) 
+                display: none
+                width: 80%
+                height: 100%
+            li
+                padding-inline: 4px
+    ul
+        list-style: none
+        a
+            font-size: 20px
+            color: white
+            text-decoration: none
+    .menu_tel
+        margin: 0
+        padding: 0
+        width: 80%
+        display: flex
+        justify-content: center
+    .menu_tel:hover .menu_der
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        position: absolute
+        margin: 0
+        padding-top:0
+        top: 150%
+        left: 0

@@ -6112,16 +6112,21 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-nav {
+.standard {
   background-color: #363b47;
   height: 65px;
 }
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  nav .flati {
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .standard {
     display: none;
   }
 }
-nav div {
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .standard .flati {
+    display: none;
+  }
+}
+.standard div {
   height: 100%;
   width: 70%;
   margin: auto;
@@ -6131,20 +6136,20 @@ nav div {
   color: white;
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {
-  nav div {
+  .standard div {
     justify-content: center;
     width: 90%;
   }
 }
-nav div p {
+.standard div p {
   font-size: 30px;
   margin: 0;
 }
-nav div .menu_droite {
+.standard div .menu_droite {
   display: flex;
   align-items: end;
 }
-nav div .menu_droite ul {
+.standard div .menu_droite ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -6153,12 +6158,12 @@ nav div .menu_droite ul {
   margin: 0;
   padding: 0;
 }
-nav div .menu_droite ul li {
+.standard div .menu_droite ul li {
   height: 100%;
   list-style: none;
   width: 20%;
 }
-nav div .menu_droite ul li a {
+.standard div .menu_droite ul li a {
   text-decoration: none;
   color: #949494;
   font-size: 10px;
@@ -6169,9 +6174,64 @@ nav div .menu_droite ul li a {
   justify-content: center;
   border-radius: 3px 3px 0 0;
 }
-nav div .menu_droite ul li a:hover {
+.standard div .menu_droite ul li a:hover {
   color: white;
   background-color: #3676bb;
+}
+
+.deroulant {
+  position: relative;
+  background-color: #363b47;
+  height: 65px;
+}
+@media screen and (min-width: 425px) {
+  .deroulant {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .deroulant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) and (min-width: 375px) and (max-width: 425px) {
+  .deroulant .menu_der {
+    display: none;
+    width: 80%;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .deroulant .menu_der li {
+    padding-inline: 4px;
+  }
+}
+.deroulant ul {
+  list-style: none;
+}
+.deroulant ul a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.deroulant .menu_tel {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.deroulant .menu_tel:hover .menu_der {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 0;
+  padding-top: 0;
+  top: 150%;
+  left: 0;
 }
 
 .first_section {
