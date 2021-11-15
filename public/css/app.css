@@ -6283,6 +6283,41 @@ nav div .menu_droite ul li a:hover {
   border-radius: 5px;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3676bb;
+}
+footer .footer_clair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+footer .footer_clair div {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_clair div i {
+  color: #5e91c9;
+}
+footer .footer_dark {
+  background-color: #363b47;
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_dark p {
+  color: white;
+  font-size: 10px;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
