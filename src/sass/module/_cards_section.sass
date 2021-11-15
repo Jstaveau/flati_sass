@@ -1,70 +1,117 @@
 .cards_section
-    width: 70%
-    height: 650px
-    margin: auto
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-evenly
-    .cards_div
+    background-color: #efeff1
+    .fond_beige
+        width: 70%
+        height: 650px
+        margin: auto
         display: flex
-        justify-content: space-between
-        .cards_round
-            padding: 10px
-            display: flex
-            flex-direction: column
-            justify-content: space-around
-            align-items: center
-            width: 20%
-            background-color: #e8e6e0
-            border-radius: 10px
-            font-size: 12px
-            text-align: center
-            color: #7a8691
-            h1
-                margin-bottom: 0
-                color: #000000
-            i
-                color: #3676bb
-                background-color: white
-                border-radius: 50%
-                padding: 5%
-            a
-                text-decoration: none
-                color: #3676bb
-
-    .triptique_div
-        display: flex
-        justify-content: space-between
-        .cards
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        @media screen and (min-width:$screen_xs) and (max-width:$screen_s)
+            height: 2300px
+        @media screen and (min-width:$screen_s) and (max-width:$screen_m)
+            height: 2600px
+        @media screen and (min-width:769px) and (max-width:$screen_l)
+            width: 90%
+        .cards_div
             display: flex
             justify-content: space-between
-            width: 60%
-            div
-                width: 33%
-                background-color: #38485f
-                border-radius: 3px
-                display: flex
+            @media screen and (min-width:$screen_xs) and (max-width:$screen_s)
                 flex-direction: column
                 align-items: center
-                color: white
-                p
-                    width: 80%
-                    margin: auto
-                    padding-bottom: 10px
-                    font-size: 12px
-            img
+                justify-content: space-evenly
+                height: 80%
                 width: 100%
-        .paragraph_g
-            color: #7a8691
-            width: 25%
-            p
+            @media screen and (min-width:$screen_s) and (max-width:$screen_m)
+                flex-direction: column
+                align-items: center
+                justify-content: space-evenly
+                height: 80%
+                width: 70%
+            .cards_round
+                padding: 10px
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                width: 20%
+                background-color: #e8e6e0
+                border-radius: 10px
                 font-size: 12px
-            .p_noir
-                color: #000000
-            button
-                background-color: #26a2cc
-                padding: 15px
-                color: white
-                border: none
-                border-radius: 5px
+                text-align: center
+                color: #7a8691
+                @media screen and (min-width:$screen_xs) and (max-width:$screen_m)
+                    width: 100%
+                @media screen and (min-width:769px) and (max-width:$screen_l)
+                    width: 20%
+                h1
+                    margin-bottom: 0
+                    color: #000000
+                i
+                    color: #3676bb
+                    background-color: white
+                    border-radius: 50%
+                    padding: 5%
+                a
+                    text-decoration: none
+                    color: #3676bb
+        .triptique_div
+            display: flex
+            justify-content: space-between
+            @media screen and (min-width:$screen_xs) and (max-width:$screen_m)
+                flex-direction: column
+                align-items: center
+                width: 100%
+                height: 100%
+            .cards
+                display: flex
+                justify-content: space-between
+                width: 60%
+                @media screen and (min-width:$screen_xs) and (max-width:$screen_m)
+                    width: 100%
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-around
+                    height: 100%
+                @media screen and (min-width:$screen_m) and (max-width:$screen_l)
+                        width: 60%
+                div
+                    width: 33%
+                    background-color: #38485f
+                    border-radius: 3px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    color: white
+                    @media screen and (min-width:$screen_xs) and (max-width:$screen_s)
+                        width: 100%
+                    @media screen and (min-width:$screen_s) and (max-width:$screen-m)
+                        width: 80%
+                    h3
+                        @media screen and (min-width:$screen_m) and (max-width:$screen_l)
+                        font-size: 16px
+                    p
+                        width: 80%
+                        margin: auto
+                        padding-bottom: 10px
+                        font-size: 12px
+                    img
+                        width: 100%
+            .paragraph_g
+                color: #7a8691
+                width: 25%
+                @media screen and (min-width:$screen_xs) and (max-width:$screen_m)
+                    width: 100%
+                @media screen and (min-width:$screen_m) and (max-width:$screen_l)
+                        width: 50%
+                p
+                    font-size: 12px
+                .p_noir
+                    color: #000000
+                button
+                    background-color: #26a2cc
+                    padding: 15px
+                    color: white
+                    border: none
+                    border-radius: 5px

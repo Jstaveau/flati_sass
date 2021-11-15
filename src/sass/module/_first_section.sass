@@ -15,8 +15,15 @@
         justify-content: space-evenly
         height: 300px
         text-align: center
+        @media screen and (min-width:$screen_xs) and (max-width:$screen_s)        
+            height: 150px
         p
-            margin: 0
+            @media screen and (min-width:$screen_xs) and (max-width:$screen_s)        
+                font-size: 16px
+                margin: 0
+            @media screen and (min-width:$screen_s) and (max-width:$screen_m)        
+                font-size: 20px
+                margin: 0
             .programmers
                 background-color: #26a2cc
                 color: white
