@@ -6162,6 +6162,42 @@ nav div .menu_droite ul li a:hover {
   background-color: #3676bb;
 }
 
+.first_section {
+  background-color: #e8e6e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first_section img {
+  width: 100%;
+}
+.first_section .citation {
+  color: #7a8691;
+  width: 70%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 300px;
+  text-align: center;
+}
+.first_section .citation p {
+  margin: 0;
+}
+.first_section .citation p .programmers {
+  background-color: #26a2cc;
+  color: white;
+  padding: 2px;
+}
+.first_section .citation p .complexity {
+  color: #26a2cc;
+  font-weight: bold;
+}
+.first_section .citation p .simplicity {
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
