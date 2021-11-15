@@ -6116,6 +6116,11 @@ nav {
   background-color: #363b47;
   height: 65px;
 }
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  nav .flati {
+    display: none;
+  }
+}
 nav div {
   height: 100%;
   width: 70%;
@@ -6124,6 +6129,12 @@ nav div {
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  nav div {
+    justify-content: center;
+    width: 90%;
+  }
 }
 nav div p {
   font-size: 30px;
@@ -6140,6 +6151,7 @@ nav div .menu_droite ul {
   width: 100%;
   height: 80%;
   margin: 0;
+  padding: 0;
 }
 nav div .menu_droite ul li {
   height: 100%;
